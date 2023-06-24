@@ -1,0 +1,17 @@
+.app-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  //   padding-inline: 1em;
+  background-color: black;
+
+  .left {
+    display: flex;
+    gap: 2rem;
+
+    & > * {
+      font-size: large;
+    }
+  }
+}

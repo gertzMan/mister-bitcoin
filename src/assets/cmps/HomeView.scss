@@ -1,0 +1,17 @@
+.greeting-container {
+  margin-block-start: 3rem;
+  h1 span {
+    color: hsla(160, 100%, 37%, 1);
+  }
+  .balance-desc {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .bitcoin-logo {
+    // padding-bottom: 2px;
+    color: hsla(160, 100%, 37%, 1);
+    margin: 0;
+    margin-top: 4px;
+  }
+}
