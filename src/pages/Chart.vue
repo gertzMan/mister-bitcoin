@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="chart-container main-layout">
-    <h1>Bitcoin Stats</h1>
+    <h1>Bitcoin Statistics</h1>
     <div v-if="priceHistory && avgBlockSize">
       <BarChart :data="priceHistoryData" :labels="getOptions" />
       <BarChart :data="avgBlockSizeData" :labels="getOptions" />
