@@ -2,7 +2,7 @@
   <article v-if="contact" class="contact-details">
     <img
       class="contact-avatar"
-      src="https://robohash.org/{{`${contact._id}`}}.png?set=set5 "
+      :src="`https://robohash.org/${contact._id}.png?set=set5`"
     />
     <div class="name">
       <v-icon fill="hsla(160, 100%, 37%, 1)" name="ri-contacts-line" />
