@@ -9,8 +9,11 @@
       </div>
 
       <div v-if="user && exchgRate" class="right">
-        <div>1 USD = {{ this.exchgRate }} BTC</div>
-        <div>Logged in as: {{ this.user.name }}</div>
+        <div class="quick-stats">1 USD = {{ this.exchgRate }} BTC</div>
+        <!-- <div>Logged in as: {{ this.user.name }}</div> -->
+        <div class="avatar">
+          <span class="initials">D.O</span>
+        </div>
       </div>
     </nav>
   </header>

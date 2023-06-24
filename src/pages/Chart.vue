@@ -1,16 +1,15 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-
 <template>
-  <h1>Stats</h1>
+  <h1>Bitcoin Stats</h1>
   <div v-if="priceHistory">
-    <PriceHistoryChart :data="priceHistoryData" :labels="getOptions" />
-    <PriceHistoryChart :data="avgBlockSizeData" :labels="getOptions" />
+    <BarChart :data="priceHistoryData" :labels="getOptions" />
+    <BarChart :data="avgBlockSizeData" :labels="getOptions" />
   </div>
 </template>
 
 <script>
 import { bitcoinService } from '../services/bitcoin.service'
-import PriceHistoryChart from '../cmps/Charts/BarChart.vue'
+import BarChart from '../cmps/Charts/BarChart.vue'
 
 export default {
   data() {
@@ -23,7 +22,7 @@ export default {
     this.priceHistory = await bitcoinService.getMarketPriceHistory()
     this.avgBlockSize = await bitcoinService.getAvgBlockSize()
   },
-  components: { PriceHistoryChart },
+  components: { BarChart },
 
   computed: {
     priceHistoryData() {

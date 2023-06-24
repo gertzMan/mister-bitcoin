@@ -1,7 +1,11 @@
 <template>
   <section class="contact-list">
     <ul class="clean-list">
-      <li v-for="contact in contacts" :key="contact._id">
+      <li
+        @:click="navigateToContact(contact._id)"
+        v-for="contact in contacts"
+        :key="contact._id"
+      >
         <ContactPreview :contact="contact" />
         <section class="contact-actions">
           <button
@@ -34,6 +38,9 @@ export default {
   methods: {
     onRemoveContact(contactId) {
       this.$emit('remove', contactId)
+    },
+    navigateToContact(id) {
+      this.$router.push('/contact/' + id)
     },
   },
 }

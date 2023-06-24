@@ -1,17 +1,43 @@
 .app-header nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 10vh;
-  //   padding-inline: 1em;
-  background-color: black;
+  height: 8vh;
 
   .left {
     display: flex;
+    align-items: center;
     gap: 2rem;
-
     & > * {
       font-size: large;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    .quick-stats {
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      display: inline-block;
+    }
+    .avatar {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: hsl(160, 100%, 37%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
     }
   }
 }
