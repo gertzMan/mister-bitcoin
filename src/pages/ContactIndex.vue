@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-index">
+  <div class="contact-index main-layout">
     <h1>Contacts</h1>
     <ContactFilter @filter="onSetFilterBy" />
     <ContactList

@@ -1,5 +1,6 @@
 <template>
-  <div class="greeting-container" v-if="user && exchgRate">
+  <Hero />
+  <div class="greeting-container main-layout" v-if="user && exchgRate">
     <h1>
       Hello <span>{{ this.user.name }}</span
       >,
@@ -16,7 +17,7 @@ BiCurrencyBitcoin
 <script>
 import { userService } from '../services/user.service.js'
 import { bitcoinService } from '../services/bitcoin.service.js'
-
+import Hero from '../cmps/Hero.vue'
 export default {
   data() {
     return {
@@ -30,7 +31,7 @@ export default {
   },
 
   methods: {},
-  components: {},
+  components: { Hero },
 }
 </script>
 

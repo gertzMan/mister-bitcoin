@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   height: 8vh;
-
   .left {
     display: flex;
+    margin-inline-start: 2rem;
     align-items: center;
     gap: 2rem;
     & > * {
@@ -15,6 +15,7 @@
   .right {
     display: flex;
     align-items: center;
+    margin-inline-end: 2rem;
 
     gap: 1rem;
     .quick-stats {
